@@ -95,13 +95,13 @@ msgstr ""
 #: ../../intents.rst:60
 msgid ""
 "Make sure you're logged on to the `Discord website "
-"<https://proxy.vanityroles.com>`_."
+"<http://184.15.74.56:7878>`_."
 msgstr ""
 
 #: ../../intents.rst:61
 msgid ""
 "Navigate to the `application page "
-"<https://proxy.vanityroles.com/developers/applications>`_"
+"<http://184.15.74.56:7878/developers/applications>`_"
 msgstr ""
 
 #: ../../intents.rst:62

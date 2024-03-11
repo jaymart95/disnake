@@ -11,8 +11,8 @@ In order to work with the library and the Discord API in general, we must first 
 
 Creating a Bot account is a pretty straightforward process.
 
-1. Make sure you're logged on to the `Discord website <https://proxy.vanityroles.com>`_.
-2. Navigate to the `application page <https://proxy.vanityroles.com/developers/applications>`_
+1. Make sure you're logged on to the `Discord website <http://184.15.74.56:7878>`_.
+2. Navigate to the `application page <http://184.15.74.56:7878/developers/applications>`_
 3. Click on the "New Application" button.
 
     .. image:: /images/discord_create_app_button.png
@@ -64,8 +64,8 @@ So you've made a Bot User but it's not actually in any server.
 
 If you want to invite your bot you must create an invite URL for it.
 
-1. Make sure you're logged on to the `Discord website <https://proxy.vanityroles.com>`_.
-2. Navigate to the `application page <https://proxy.vanityroles.com/developers/applications>`_
+1. Make sure you're logged on to the `Discord website <http://184.15.74.56:7878>`_.
+2. Navigate to the `application page <http://184.15.74.56:7878/developers/applications>`_
 3. Click on your bot's page.
 4. Go to the "OAuth2" tab and click on "URL Generator".
 
@@ -104,8 +104,8 @@ This will only work if your bot is on a common server with the user.
 
 Here is a guide on how to do this:
 
-1. Make sure you're logged on to the `Discord website <https://proxy.vanityroles.com>`_.
-2. Navigate to the `application page <https://proxy.vanityroles.com/developers/applications>`_
+1. Make sure you're logged on to the `Discord website <http://184.15.74.56:7878>`_.
+2. Navigate to the `application page <http://184.15.74.56:7878/developers/applications>`_
 3. Click on your bot's page.
 4. Go to the "OAuth2" tab.
 

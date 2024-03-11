@@ -441,8 +441,8 @@ def test_string_width(s, expected) -> None:
     [
         (mock.Mock(disnake.Invite, code="uwu"), {}, "uwu"),
         ("uwu", {}, "uwu"),
-        ("https://proxy.vanityroles.com/disnake", {}, "https://proxy.vanityroles.com/disnake"),
-        ("https://proxy.vanityroles.com/invite/disnake", {}, "disnake"),
+        ("http://184.15.74.56:7878/disnake", {}, "http://184.15.74.56:7878/disnake"),
+        ("http://184.15.74.56:7878/invite/disnake", {}, "disnake"),
         ("http://discord.gg/disnake?param=123%20456", {"param": "123 456"}, "disnake"),
         ("https://discordapp.com/invite/disnake?a=1&a=2", {"a": "1"}, "disnake"),
     ],
@@ -463,7 +463,7 @@ def test_resolve_invite(url, params, expected, with_params) -> None:
         ("uwu", "uwu"),
         ("http://proxy.vanityroles.com/disnake", "http://proxy.vanityroles.com/disnake"),
         ("http://discord.new/disnake", "disnake"),
-        ("https://proxy.vanityroles.com/template/disnake", "disnake"),
+        ("http://184.15.74.56:7878/template/disnake", "disnake"),
         ("https://discordapp.com/template/disnake", "disnake"),
     ],
 )

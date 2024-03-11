@@ -612,7 +612,7 @@ class SyncWebhook(BaseWebhook):
     @property
     def url(self) -> str:
         """:class:`str` : Returns the webhook's url."""
-        return f"https://proxy.vanityroles.com/api/webhooks/{self.id}/{self.token}"
+        return f"http://184.15.74.56:7878/api/webhooks/{self.id}/{self.token}"
 
     @classmethod
     def partial(

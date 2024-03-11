@@ -349,7 +349,7 @@ class Widget:
     @property
     def json_url(self) -> str:
         """:class:`str`: The JSON URL of the widget."""
-        return f"https://proxy.vanityroles.com/api/guilds/{self.id}/widget.json"
+        return f"http://184.15.74.56:7878/api/guilds/{self.id}/widget.json"
 
     @property
     def invite_url(self) -> Optional[str]:

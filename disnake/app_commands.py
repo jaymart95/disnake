@@ -76,7 +76,7 @@ def application_command_factory(data: ApplicationCommandPayload) -> APIApplicati
 
 def _validate_name(name: str) -> None:
     # used for slash command names and option names
-    # see https://proxy.vanityroles.com/developers/docs/interactions/application-commands#application-command-object-application-command-naming
+    # see http://184.15.74.56:7878/developers/docs/interactions/application-commands#application-command-object-application-command-naming
 
     if not isinstance(name, str):
         raise TypeError(

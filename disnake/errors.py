@@ -224,7 +224,7 @@ class ConnectionClosed(ClientException):
         The shard ID that got closed if applicable.
     """
 
-    # https://proxy.vanityroles.com/developers/docs/topics/opcodes-and-status-codes#gateway-gateway-close-event-codes
+    # http://184.15.74.56:7878/developers/docs/topics/opcodes-and-status-codes#gateway-gateway-close-event-codes
     GATEWAY_CLOSE_EVENT_REASONS: ClassVar[Mapping[int, str]] = {
         4000: "Unknown error",
         4001: "Unknown opcode",
@@ -242,7 +242,7 @@ class ConnectionClosed(ClientException):
         4014: "Disallowed intents - you tried to specify an intent that you have not enabled or are not approved for.",
     }
 
-    # https://proxy.vanityroles.com/developers/docs/topics/opcodes-and-status-codes#voice-voice-close-event-codes
+    # http://184.15.74.56:7878/developers/docs/topics/opcodes-and-status-codes#voice-voice-close-event-codes
     GATEWAY_VOICE_CLOSE_EVENT_REASONS: ClassVar[Mapping[int, str]] = {
         **GATEWAY_CLOSE_EVENT_REASONS,
         4002: "Failed to decode payload",
@@ -280,7 +280,7 @@ class PrivilegedIntentsRequired(ClientException):
     """Exception that's raised when the gateway is requesting privileged intents
     but they're not ticked in the developer page yet.
 
-    Go to https://proxy.vanityroles.com/developers/applications/ and enable the intents
+    Go to http://184.15.74.56:7878/developers/applications/ and enable the intents
     that are required. Currently these are as follows:
 
     - :attr:`Intents.members`
@@ -297,7 +297,7 @@ class PrivilegedIntentsRequired(ClientException):
         self.shard_id: Optional[int] = shard_id
         msg = (
             f"Shard ID {shard_id} is requesting privileged intents that have not been explicitly enabled in the "
-            "developer portal. It is recommended to go to https://proxy.vanityroles.com/developers/applications/ "
+            "developer portal. It is recommended to go to http://184.15.74.56:7878/developers/applications/ "
             "and explicitly enable the privileged intents within your application's page. If this is not "
             "possible, then consider disabling the privileged intents instead."
         )

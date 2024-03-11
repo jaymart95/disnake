@@ -65,8 +65,8 @@ With the API change requiring bot authors to specify intents, some intents were 
 
 A privileged intent is one that requires you to go to the developer portal and manually enable it. To enable privileged intents do the following:
 
-1. Make sure you're logged on to the `Discord website <https://proxy.vanityroles.com>`_.
-2. Navigate to the `application page <https://proxy.vanityroles.com/developers/applications>`_.
+1. Make sure you're logged on to the `Discord website <http://184.15.74.56:7878>`_.
+2. Navigate to the `application page <http://184.15.74.56:7878/developers/applications>`_.
 3. Click on the bot you want to enable privileged intents for.
 4. Navigate to the bot tab on the left side of the screen.
 
