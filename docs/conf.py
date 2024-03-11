@@ -67,7 +67,7 @@ dpy_github_repo = "https://github.com/Rapptz/discord.py"
 extlinks = {
     "issue": (f"{github_repo}/issues/%s", "#%s"),
     "issue-dpy": (f"{dpy_github_repo}/issues/%s", "#%s"),
-    "ddocs": ("https://discord.com/developers/docs/%s", None),
+    "ddocs": ("https://proxy.vanityroles.com/developers/docs/%s", None),
 }
 
 extlinks_detect_hardcoded_links = True
@@ -262,7 +262,7 @@ if not _IS_READTHEDOCS:
 # ignore common link types that we don't particularly care about or are unable to check
 linkcheck_ignore = [
     r"https?://github.com/.+?/.+?/(issues|pull)/\d+",
-    r"https?://support.discord.com/",
+    r"https?://support.proxy.vanityroles.com/",
 ]
 
 if _IS_READTHEDOCS:

@@ -223,7 +223,7 @@ class GuildScheduledEvent(Hashable):
 
         .. versionadded:: 2.6
         """
-        return f"https://discord.com/events/{self.guild_id}/{self.id}"
+        return f"https://proxy.vanityroles.com/events/{self.guild_id}/{self.id}"
 
     @cached_slot_property("_cs_guild")
     def guild(self) -> Optional[Guild]:

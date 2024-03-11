@@ -100,7 +100,7 @@ def _workaround_set_api_version(version: Literal[9, 10]) -> None:
 
     global _API_VERSION  # noqa: PLW0603
     _API_VERSION = version
-    Route.BASE = f"https://discord.com/api/v{_API_VERSION}"
+    Route.BASE = f"https://proxy.vanityroles.com/api/v{_API_VERSION}"
 
 
 async def json_or_text(response: aiohttp.ClientResponse) -> Union[Dict[str, Any], str]:
@@ -137,7 +137,7 @@ def set_attachments(payload: Dict[str, Any], files: Sequence[File]) -> None:
 
 def to_multipart(payload: Dict[str, Any], files: Sequence[File]) -> List[Dict[str, Any]]:
     """Converts the payload and list of files to a multipart payload,
-    as specified by https://discord.com/developers/docs/reference#uploading-files
+    as specified by https://proxy.vanityroles.com/developers/docs/reference#uploading-files
     """
     multipart: List[Dict[str, Any]] = []
     for index, file in enumerate(files):
@@ -166,7 +166,7 @@ def to_multipart_with_attachments(
 
 
 class Route:
-    BASE: ClassVar[str] = "https://discord.com/api/v10"
+    BASE: ClassVar[str] = "https://proxy.vanityroles.com/api/v10"
 
     def __init__(self, method: str, path: str, **parameters: Any) -> None:
         self.path: str = path

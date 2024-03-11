@@ -32,14 +32,14 @@ msgstr "Botのアカウント作成はとても簡単です。"
 #, fuzzy
 msgid ""
 "Make sure you're logged on to the `Discord website "
-"<https://discord.com>`_."
+"<https://proxy.vanityroles.com>`_."
 msgstr "まずは `Discordのウェブサイト <https://discordapp.com>`_ にログインしてください。"
 
 #: ../../disnake.rst:11 ../../disnake.rst:65
 #, fuzzy
 msgid ""
 "Navigate to the `application page "
-"<https://discord.com/developers/applications>`_"
+"<https://proxy.vanityroles.com/developers/applications>`_"
 msgstr "`アプリケーションページ <https://discordapp.com/developers/applications>`_ に移動します。"
 
 #: ../../disnake.rst:12
@@ -150,7 +150,7 @@ msgstr "Botに「管理者」権限を要求させることによる影響は認
 msgid ""
 "Bot owners must have 2FA enabled for certain actions and permissions when"
 " added in servers that have Server-Wide 2FA enabled. Check the `2FA "
-"support page <https://support.discord.com/hc/en-us/articles/219576828"
+"support page <https://support.proxy.vanityroles.com/hc/en-us/articles/219576828"
 "-Setting-up-Two-Factor-Authentication>`_ for more information."
 msgstr ""
 "二段階認証が有効になっているサーバーにBotが追加された場合、Botの所有者は特定の動作と権限のために二段階認証を有効化させなければいけません。詳細は"

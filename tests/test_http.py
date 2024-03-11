@@ -9,37 +9,37 @@ from disnake.http import HTTPClient
     ("url", "encoding", "zlib", "expected"),
     [
         (
-            "wss://gateway.discord.com",
+            "wss://gateway.proxy.vanityroles.com",
             "json",
             False,
-            "wss://gateway.discord.com/?v=10&encoding=json",
+            "wss://gateway.proxy.vanityroles.com/?v=10&encoding=json",
         ),
         (
-            "wss://gateway.discord.com",
+            "wss://gateway.proxy.vanityroles.com",
             "json",
             True,
-            "wss://gateway.discord.com/?v=10&encoding=json&compress=zlib-stream",
+            "wss://gateway.proxy.vanityroles.com/?v=10&encoding=json&compress=zlib-stream",
         ),
         # should overwrite existing args if needed
         (
-            "wss://gateway.discord.com/?v=42&encoding=etf&v=1111",
+            "wss://gateway.proxy.vanityroles.com/?v=42&encoding=etf&v=1111",
             "json",
             True,
-            "wss://gateway.discord.com/?v=10&encoding=json&compress=zlib-stream",
+            "wss://gateway.proxy.vanityroles.com/?v=10&encoding=json&compress=zlib-stream",
         ),
         # should keep other args intact
         (
-            "wss://gateway.discord.com/?v=42&stuff=things&a=b",
+            "wss://gateway.proxy.vanityroles.com/?v=42&stuff=things&a=b",
             "json",
             True,
-            "wss://gateway.discord.com/?v=10&stuff=things&a=b&encoding=json&compress=zlib-stream",
+            "wss://gateway.proxy.vanityroles.com/?v=10&stuff=things&a=b&encoding=json&compress=zlib-stream",
         ),
         # should remove compression if set to false
         (
-            "wss://gateway.discord.com/?v=10&compress=zlib-stream",
+            "wss://gateway.proxy.vanityroles.com/?v=10&compress=zlib-stream",
             "json",
             False,
-            "wss://gateway.discord.com/?v=10&encoding=json",
+            "wss://gateway.proxy.vanityroles.com/?v=10&encoding=json",
         ),
     ],
 )

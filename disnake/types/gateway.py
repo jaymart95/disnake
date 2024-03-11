@@ -246,7 +246,7 @@ class VoiceResumeCommand(TypedDict):
 #####
 
 
-# https://discord.com/developers/docs/topics/gateway-events#ready
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#ready
 class ReadyEvent(TypedDict):
     v: int
     user: User
@@ -257,32 +257,32 @@ class ReadyEvent(TypedDict):
     application: PartialGatewayAppInfo
 
 
-# https://discord.com/developers/docs/topics/gateway-events#resumed
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#resumed
 class ResumedEvent(TypedDict):
     ...
 
 
-# https://discord.com/developers/docs/topics/gateway-events#application-command-permissions-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#application-command-permissions-update
 ApplicationCommandPermissionsUpdateEvent = GuildApplicationCommandPermissions
 
 
-# https://discord.com/developers/docs/topics/gateway-events#message-create
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#message-create
 MessageCreateEvent = Message
 
 
-# https://discord.com/developers/docs/topics/gateway-events#message-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#message-update
 # This does not necessarily contain all message fields, but `id` and `channel_id` always exist
 MessageUpdateEvent = Message
 
 
-# https://discord.com/developers/docs/topics/gateway-events#message-delete
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#message-delete
 class MessageDeleteEvent(TypedDict):
     id: Snowflake
     channel_id: Snowflake
     guild_id: NotRequired[Snowflake]
 
 
-# https://discord.com/developers/docs/topics/gateway-events#message-delete-bulk
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#message-delete-bulk
 class MessageDeleteBulkEvent(TypedDict):
     ids: List[Snowflake]
     channel_id: Snowflake
@@ -297,25 +297,25 @@ class _BaseReactionEvent(TypedDict):
     emoji: PartialEmoji
 
 
-# https://discord.com/developers/docs/topics/gateway-events#message-reaction-add
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#message-reaction-add
 class MessageReactionAddEvent(_BaseReactionEvent):
     member: NotRequired[MemberWithUser]
     message_author_id: NotRequired[Snowflake]
 
 
-# https://discord.com/developers/docs/topics/gateway-events#message-reaction-remove
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#message-reaction-remove
 class MessageReactionRemoveEvent(_BaseReactionEvent):
     ...
 
 
-# https://discord.com/developers/docs/topics/gateway-events#message-reaction-remove-all
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#message-reaction-remove-all
 class MessageReactionRemoveAllEvent(TypedDict):
     channel_id: Snowflake
     message_id: Snowflake
     guild_id: NotRequired[Snowflake]
 
 
-# https://discord.com/developers/docs/topics/gateway-events#message-reaction-remove-emoji
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#message-reaction-remove-emoji
 class MessageReactionRemoveEmojiEvent(TypedDict):
     channel_id: Snowflake
     guild_id: NotRequired[Snowflake]
@@ -323,19 +323,19 @@ class MessageReactionRemoveEmojiEvent(TypedDict):
     emoji: PartialEmoji
 
 
-# https://discord.com/developers/docs/topics/gateway-events#interaction-create
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#interaction-create
 InteractionCreateEvent = BaseInteraction
 
 
-# https://discord.com/developers/docs/topics/gateway-events#presence-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#presence-update
 PresenceUpdateEvent = PartialPresenceUpdate
 
 
-# https://discord.com/developers/docs/topics/gateway-events#user-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#user-update
 UserUpdateEvent = User
 
 
-# https://discord.com/developers/docs/topics/gateway-events#invite-create
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#invite-create
 class InviteCreateEvent(TypedDict):
     channel_id: Snowflake
     code: str
@@ -351,42 +351,42 @@ class InviteCreateEvent(TypedDict):
     uses: int  # always 0
 
 
-# https://discord.com/developers/docs/topics/gateway-events#invite-delete
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#invite-delete
 class InviteDeleteEvent(TypedDict):
     channel_id: Snowflake
     guild_id: NotRequired[Snowflake]
     code: str
 
 
-# https://discord.com/developers/docs/topics/gateway-events#channel-create
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#channel-create
 ChannelCreateEvent = GuildChannel
 
 
-# https://discord.com/developers/docs/topics/gateway-events#channel-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#channel-update
 ChannelUpdateEvent = Channel
 
 
-# https://discord.com/developers/docs/topics/gateway-events#channel-delete
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#channel-delete
 ChannelDeleteEvent = Channel
 
 
-# https://discord.com/developers/docs/topics/gateway-events#channel-pins-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#channel-pins-update
 class ChannelPinsUpdateEvent(TypedDict):
     guild_id: NotRequired[Snowflake]
     channel_id: Snowflake
     last_pin_timestamp: NotRequired[Optional[str]]
 
 
-# https://discord.com/developers/docs/topics/gateway-events#thread-create
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#thread-create
 class ThreadCreateEvent(Thread):
     newly_created: NotRequired[bool]
 
 
-# https://discord.com/developers/docs/topics/gateway-events#thread-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#thread-update
 ThreadUpdateEvent = Thread
 
 
-# https://discord.com/developers/docs/topics/gateway-events#thread-delete
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#thread-delete
 class ThreadDeleteEvent(TypedDict):
     id: Snowflake
     guild_id: Snowflake
@@ -394,7 +394,7 @@ class ThreadDeleteEvent(TypedDict):
     type: ThreadType
 
 
-# https://discord.com/developers/docs/topics/gateway-events#thread-list-sync
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#thread-list-sync
 class ThreadListSyncEvent(TypedDict):
     guild_id: Snowflake
     channel_ids: NotRequired[List[Snowflake]]
@@ -402,12 +402,12 @@ class ThreadListSyncEvent(TypedDict):
     members: List[ThreadMember]
 
 
-# https://discord.com/developers/docs/topics/gateway-events#thread-member-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#thread-member-update
 class ThreadMemberUpdateEvent(ThreadMember):
     guild_id: Snowflake
 
 
-# https://discord.com/developers/docs/topics/gateway-events#thread-members-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#thread-members-update
 class ThreadMembersUpdateEvent(TypedDict):
     id: Snowflake
     guild_id: Snowflake
@@ -416,18 +416,18 @@ class ThreadMembersUpdateEvent(TypedDict):
     removed_member_ids: NotRequired[List[Snowflake]]
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-member-add
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-member-add
 class GuildMemberAddEvent(MemberWithUser):
     guild_id: Snowflake
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-member-remove
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-member-remove
 class GuildMemberRemoveEvent(TypedDict):
     guild_id: Snowflake
     user: User
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-member-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-member-update
 class GuildMemberUpdateEvent(TypedDict):
     guild_id: Snowflake
     roles: List[Snowflake]
@@ -443,31 +443,31 @@ class GuildMemberUpdateEvent(TypedDict):
     flags: int
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-emojis-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-emojis-update
 class GuildEmojisUpdateEvent(TypedDict):
     guild_id: Snowflake
     emojis: List[Emoji]
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-stickers-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-stickers-update
 class GuildStickersUpdateEvent(TypedDict):
     guild_id: Snowflake
     stickers: List[GuildSticker]
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-create
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-create
 GuildCreateEvent = Union[Guild, UnavailableGuild]
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-update
 GuildUpdateEvent = Guild
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-delete
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-delete
 GuildDeleteEvent = UnavailableGuild
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-audit-log-entry-create
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-audit-log-entry-create
 class AuditLogEntryCreate(AuditLogEntry):
     guild_id: Snowflake
 
@@ -477,41 +477,41 @@ class _GuildBanEvent(TypedDict):
     user: User
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-ban-add
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-ban-add
 GuildBanAddEvent = _GuildBanEvent
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-ban-remove
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-ban-remove
 GuildBanRemoveEvent = _GuildBanEvent
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-role-create
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-role-create
 class GuildRoleCreateEvent(TypedDict):
     guild_id: Snowflake
     role: Role
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-role-delete
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-role-delete
 class GuildRoleDeleteEvent(TypedDict):
     guild_id: Snowflake
     role_id: Snowflake
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-role-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-role-update
 class GuildRoleUpdateEvent(TypedDict):
     guild_id: Snowflake
     role: Role
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-create
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-scheduled-event-create
 GuildScheduledEventCreateEvent = GuildScheduledEvent
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-scheduled-event-update
 GuildScheduledEventUpdateEvent = GuildScheduledEvent
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-delete
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-scheduled-event-delete
 GuildScheduledEventDeleteEvent = GuildScheduledEvent
 
 
@@ -521,15 +521,15 @@ class _GuildScheduledEventUserEvent(TypedDict):
     guild_id: Snowflake
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-user-add
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-scheduled-event-user-add
 GuildScheduledEventUserAddEvent = _GuildScheduledEventUserEvent
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-user-remove
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-scheduled-event-user-remove
 GuildScheduledEventUserRemoveEvent = _GuildScheduledEventUserEvent
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-members-chunk
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-members-chunk
 class GuildMembersChunkEvent(TypedDict):
     guild_id: Snowflake
     members: List[MemberWithUser]
@@ -540,59 +540,59 @@ class GuildMembersChunkEvent(TypedDict):
     nonce: NotRequired[str]
 
 
-# https://discord.com/developers/docs/topics/gateway-events#guild-integrations-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#guild-integrations-update
 class GuildIntegrationsUpdateEvent(TypedDict):
     guild_id: Snowflake
 
 
-# https://discord.com/developers/docs/topics/gateway-events#integration-create
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#integration-create
 class IntegrationCreateEvent(BaseIntegration):
     guild_id: Snowflake
 
 
-# https://discord.com/developers/docs/topics/gateway-events#integration-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#integration-update
 class IntegrationUpdateEvent(BaseIntegration):
     guild_id: Snowflake
 
 
-# https://discord.com/developers/docs/topics/gateway-events#integration-delete
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#integration-delete
 class IntegrationDeleteEvent(TypedDict):
     id: Snowflake
     guild_id: Snowflake
     application_id: NotRequired[Snowflake]
 
 
-# https://discord.com/developers/docs/topics/gateway-events#webhooks-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#webhooks-update
 class WebhooksUpdateEvent(TypedDict):
     guild_id: Snowflake
     channel_id: Snowflake
 
 
-# https://discord.com/developers/docs/topics/gateway-events#stage-instance-create
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#stage-instance-create
 StageInstanceCreateEvent = StageInstance
 
 
-# https://discord.com/developers/docs/topics/gateway-events#stage-instance-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#stage-instance-update
 StageInstanceUpdateEvent = StageInstance
 
 
-# https://discord.com/developers/docs/topics/gateway-events#stage-instance-delete
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#stage-instance-delete
 StageInstanceDeleteEvent = StageInstance
 
 
-# https://discord.com/developers/docs/topics/gateway-events#voice-state-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#voice-state-update
 # We assume that we'll only receive voice states for guilds
 VoiceStateUpdateEvent = GuildVoiceState
 
 
-# https://discord.com/developers/docs/topics/gateway-events#voice-server-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#voice-server-update
 class VoiceServerUpdateEvent(TypedDict):
     token: str
     guild_id: Snowflake
     endpoint: Optional[str]
 
 
-# https://discord.com/developers/docs/topics/gateway-events#typing-start
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#typing-start
 class TypingStartEvent(TypedDict):
     channel_id: Snowflake
     guild_id: NotRequired[Snowflake]
@@ -601,19 +601,19 @@ class TypingStartEvent(TypedDict):
     member: NotRequired[MemberWithUser]
 
 
-# https://discord.com/developers/docs/topics/gateway-events#auto-moderation-rule-create
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#auto-moderation-rule-create
 AutoModerationRuleCreateEvent = AutoModRule
 
 
-# https://discord.com/developers/docs/topics/gateway-events#auto-moderation-rule-update
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#auto-moderation-rule-update
 AutoModerationRuleUpdateEvent = AutoModRule
 
 
-# https://discord.com/developers/docs/topics/gateway-events#auto-moderation-rule-delete
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#auto-moderation-rule-delete
 AutoModerationRuleDeleteEvent = AutoModRule
 
 
-# https://discord.com/developers/docs/topics/gateway-events#auto-moderation-action-execution
+# https://proxy.vanityroles.com/developers/docs/topics/gateway-events#auto-moderation-action-execution
 class AutoModerationActionExecutionEvent(TypedDict):
     guild_id: Snowflake
     action: AutoModAction
@@ -628,13 +628,13 @@ class AutoModerationActionExecutionEvent(TypedDict):
     matched_keyword: NotRequired[Optional[str]]
 
 
-# https://discord.com/developers/docs/monetization/entitlements#new-entitlement
+# https://proxy.vanityroles.com/developers/docs/monetization/entitlements#new-entitlement
 EntitlementCreate = Entitlement
 
 
-# https://discord.com/developers/docs/monetization/entitlements#updated-entitlement
+# https://proxy.vanityroles.com/developers/docs/monetization/entitlements#updated-entitlement
 EntitlementUpdate = Entitlement
 
 
-# https://discord.com/developers/docs/monetization/entitlements#deleted-entitlement
+# https://proxy.vanityroles.com/developers/docs/monetization/entitlements#deleted-entitlement
 EntitlementDelete = Entitlement

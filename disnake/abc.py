@@ -632,7 +632,7 @@ class GuildChannel(ABC):
 
             This exists for all guild channels but may not be usable by the client for all guild channel types.
         """
-        return f"https://discord.com/channels/{self.guild.id}/{self.id}"
+        return f"https://proxy.vanityroles.com/channels/{self.guild.id}/{self.id}"
 
     def _apply_implict_permissions(self, base: Permissions) -> None:
         # if you can't send a message in a channel then you can't have certain

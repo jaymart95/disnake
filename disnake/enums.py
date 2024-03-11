@@ -762,7 +762,7 @@ class WidgetStyle(Enum):
         return self.value
 
 
-# reference: https://discord.com/developers/docs/reference#locales
+# reference: https://proxy.vanityroles.com/developers/docs/reference#locales
 class Locale(Enum):
     bg = "bg"
     "Bulgarian | български"
