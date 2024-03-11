@@ -262,7 +262,7 @@ if not _IS_READTHEDOCS:
 # ignore common link types that we don't particularly care about or are unable to check
 linkcheck_ignore = [
     r"https?://github.com/.+?/.+?/(issues|pull)/\d+",
-    r"https?://support.proxy.vanityroles.com/",
+    r"https?://support.discord.com/",
 ]
 
 if _IS_READTHEDOCS:

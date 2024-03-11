@@ -84,7 +84,7 @@ If you want to invite your bot you must create an invite URL for it.
 
     - Please be aware of the consequences of requiring your bot to have the "Administrator" permission.
 
-    - Bot owners must have 2FA enabled for certain actions and permissions when added in servers that have Server-Wide 2FA enabled. Check the `2FA support page <https://support.proxy.vanityroles.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication>`_ for more information.
+    - Bot owners must have 2FA enabled for certain actions and permissions when added in servers that have Server-Wide 2FA enabled. Check the `2FA support page <https://support.discord.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication>`_ for more information.
 
     .. image:: /images/discord_oauth2_perms.png
         :alt: The permission checkboxes with some permissions checked.
@@ -126,7 +126,7 @@ Here is a guide on how to do this:
 
     - Please be aware of the consequences of requiring your bot to have the "Administrator" permission.
 
-    - Bot owners must have 2FA enabled for certain actions and permissions when added in servers that have Server-Wide 2FA enabled. Check the `2FA support page <https://support.proxy.vanityroles.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication>`_ for more information.
+    - Bot owners must have 2FA enabled for certain actions and permissions when added in servers that have Server-Wide 2FA enabled. Check the `2FA support page <https://support.discord.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication>`_ for more information.
 
     .. image:: /images/discord_oauth2_perms.png
         :alt: The permission checkboxes with some permissions checked.

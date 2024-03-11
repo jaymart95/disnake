@@ -976,7 +976,7 @@ msgstr "この関数は、異なる二通りの方法で使用することがで
 #, fuzzy
 msgid ""
 "Logging on with a user token is against the Discord `Terms of Service "
-"<https://support.proxy.vanityroles.com/hc/en-us/articles/115002192352>`_ and doing "
+"<https://support.discord.com/hc/en-us/articles/115002192352>`_ and doing "
 "so might potentially get your account banned. Use this at your own risk."
 msgstr ""
 "ユーザートークンを用いてのログインはDiscordの `利用規約 <https://support.discordapp.com/hc/en-"

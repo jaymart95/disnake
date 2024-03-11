@@ -461,9 +461,9 @@ def test_resolve_invite(url, params, expected, with_params) -> None:
     [
         (mock.Mock(disnake.Template, code="uwu"), "uwu"),
         ("uwu", "uwu"),
-        ("http://proxy.vanityroles.com/disnake", "http://proxy.vanityroles.com/disnake"),
+        ("http://discord.com/disnake", "http://discord.com/disnake"),
         ("http://discord.new/disnake", "disnake"),
-        ("http://184.15.74.56:7878/template/disnake", "disnake"),
+        ("http://discord.com/template/disnake", "disnake"),
         ("https://discordapp.com/template/disnake", "disnake"),
     ],
 )

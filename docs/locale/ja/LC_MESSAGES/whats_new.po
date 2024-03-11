@@ -811,7 +811,7 @@ msgstr ""
 
 #: ../../whats_new.rst:243
 msgid ""
-"The domain name was changed from ``discordapp.com`` to ``proxy.vanityroles.com`` to"
+"The domain name was changed from ``discordapp.com`` to ``discord.com`` to"
 " prepare for the required domain migration"
 msgstr ""
 
